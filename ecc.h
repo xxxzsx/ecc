@@ -65,7 +65,7 @@ bool test(uint64_t* a, int len, int dist, uint64_t t, int pos, int num, int cnt)
 }
 
 // Find values that all differ by at least limit bits.
-void find(uint64_t *a, int dist, int length) {
+int find(uint64_t *a, int dist, int length) {
     int i, k;
     uint64_t j;
     uint64_t trial;
@@ -87,4 +87,5 @@ void find(uint64_t *a, int dist, int length) {
                     break;
         }
     }
+    return i;
 }
