@@ -39,7 +39,7 @@ int count(uint64_t x) {
  *   int num      - number of positions still to be chosen
  *   int cnt      - final number of chosen positions total
  */
-int test(uint64_t* a, int len, int dist, uint64_t t, int pos, int num, int cnt) {
+bool test(uint64_t* a, int len, int dist, uint64_t t, int pos, int num, int cnt) {
     int i;
 
     if (num) {
