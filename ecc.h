@@ -83,10 +83,8 @@ void find(uint64_t *a, int dist, int length) {
 
             a[i] = j;
             for (k = 0; k < dist - 2; k++)
-                if (!test(a, i, dist, (uint64_t)0, 0, k, k + 1))
-                    continue;
-
-            break;
+                if (test(a, i, dist, (uint64_t)0, 0, k, k + 1))
+                    break;
         }
     }
 }
